@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  movie = {
+    title: 'The Matrix',
+    year: 1999,
+    rating: 8.7
+  }
+  duplicateNumber(number: number): number {
+    return number * 2;
+  }
 }
