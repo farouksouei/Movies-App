@@ -1,12 +1,17 @@
-<h1>hello {{title}}</h1>
-<p>{{title}}</p>
-<div>
-  the dupplicate of 3 = {{duplicateNumber(3 )}}
+<app-menu></app-menu>
+<div class="container">
+  <h1>hello {{title}}</h1>
+  <p>{{title}}</p>
+  <div>
+    the dupplicate of 3 = {{duplicateNumber(3 )}}
+  </div>
+  <h2>Template files</h2>
+  <input type="file" style="display: none;" #uploader>
+  <button (click)="uploader.click()">Upload</button>
+
+  <h2>The Future Releases : </h2>
+  <app-movies-list [movies]="FutureReleases"></app-movies-list>
+
+  <h2>The Past Releases : </h2>
+  <app-movies-list [movies]="PastReleases"></app-movies-list>
 </div>
-<h2>Template files</h2>
-<input type="file" style="display: none;" #uploader>
-<button (click)="uploader.click()">Upload</button>
-<h2>The Future Releases : </h2>
-<app-movies-list [movies]="FutureReleases"></app-movies-list>
-<h2>The Past Releases : </h2>
-<app-movies-list [movies]="PastReleases"></app-movies-list>
