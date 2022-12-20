@@ -4,10 +4,11 @@
   the dupplicate of 3 = {{duplicateNumber(3 )}}
 </div>
 <h2>The Movies Available : </h2>
-<div>
-  <p>{{movie.title | uppercase}}</p>
-  <p>{{movie.year}}</p>
-  <p>{{movie.rating}}</p>
-  <p>{{movie.date | date:"dd-MMMM-yy" | uppercase}}</p>
-  <p>{{movie.price | currency}}</p>
+<div *ngFor="let movie of movies ; let index = index" class="movie-container">
+  <p>index : {{index}}</p>
+  <p>title : {{movie.title | uppercase}}</p>
+  <p>year : {{movie.year}}</p>
+  <p>movie : {{movie.rating}}</p>
+  <p>date : {{movie.date | date:"dd-MMMM-yy" | uppercase}}</p>
+  <p>price : {{movie.price | currency}}</p>
 </div>
