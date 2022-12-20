@@ -5,7 +5,9 @@
 </div>
 <h2>The Movies Available : </h2>
 <div>
-  <p>{{movie.title}}</p>
+  <p>{{movie.title | uppercase}}</p>
   <p>{{movie.year}}</p>
   <p>{{movie.rating}}</p>
+  <p>{{movie.date | date:"dd-MMMM-yy" | uppercase}}</p>
+  <p>{{movie.price | currency}}</p>
 </div>

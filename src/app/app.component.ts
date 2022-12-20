@@ -10,7 +10,9 @@ export class AppComponent {
   movie = {
     title: 'The Matrix',
     year: 1999,
-    rating: 8.7
+    rating: 8.7,
+    date: new Date(),
+    price: 9.99,
   }
   duplicateNumber(number: number): number {
     return number * 2;
