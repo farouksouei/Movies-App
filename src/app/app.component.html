@@ -3,6 +3,9 @@
 <div>
   the dupplicate of 3 = {{duplicateNumber(3 )}}
 </div>
+<h2>Template files</h2>
+<input type="file" style="display: none;" #uploader>
+<button (click)="uploader.click()">Upload</button>
 <h2>The Future Releases : </h2>
 <app-movies-list [movies]="FutureReleases"></app-movies-list>
 <h2>The Past Releases : </h2>
