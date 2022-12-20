@@ -4,7 +4,7 @@
   <p>there are no records to display</p>
 </div>
 <div *ngFor="let movie of movies ; let index = index" class="movie-container">
-  <p>index : {{index}}</p>
+  <p>index : {{index}} <button style="margin: left 1px;" (click)="Remove(index)" >Remove</button></p>
   <p>title : {{movie.title | uppercase}}</p>
   <p>year : {{movie.year}}</p>
   <p>movie : {{movie.rating}}</p>

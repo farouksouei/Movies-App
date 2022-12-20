@@ -11,4 +11,9 @@ export class MoviesListComponent {
 
   @Input()
   movies:any;
+
+  Remove(index:number) {
+    this.movies.splice(index, 1);
+
+  }
 }
