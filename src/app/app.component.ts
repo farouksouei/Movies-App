@@ -40,4 +40,8 @@ export class AppComponent implements OnInit {
   duplicateNumber(number: number): number {
     return number * 2;
   }
+
+  onRatingChangeHandler(rating: number) {
+    alert(rating);
+  }
 }
