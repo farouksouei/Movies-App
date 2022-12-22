@@ -37,6 +37,7 @@ export class AppComponent implements OnInit {
   title = 'app';
   FutureReleases:any;
   PastReleases:any;
+  name = 'Angular';
   duplicateNumber(number: number): number {
     return number * 2;
   }
