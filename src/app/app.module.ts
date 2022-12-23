@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilities/rating/rating.component';
+import { HomeComponent } from './home/home.component';
+import { IndexGenresComponent } from './index-genres/index-genres.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { RatingComponent } from './utilities/rating/rating.component';
     GenericListComponent,
     MenuComponent,
     RatingComponent,
+    HomeComponent,
+    IndexGenresComponent,
   ],
   imports: [
     BrowserModule,
