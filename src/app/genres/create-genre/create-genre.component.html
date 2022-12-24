@@ -1,3 +1,12 @@
 <h2>Create Genre</h2>
 
-<button mat-button color="primary" type="button" (click)="saveGenre()">Save</button>
+<form (submit)="saveGenre()" [formGroup]="form">
+  <mat-form-field appearance="outline" color="primary">
+    <mat-label color="">Name*</mat-label>
+    <input matInput formControlName="name" />
+  </mat-form-field>
+  <div>
+    <button mat-button color="primary" type="button">Save</button>
+    <a mat-button color="primary" mat-stroked-button routerLink="/genres">Cancel</a>
+  </div>
+</form>
