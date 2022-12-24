@@ -29,6 +29,8 @@ const routes: Routes = [
   {path: 'movie-theaters', component: IndexMovieTheatersComponent},
   {path: 'movie-theaters/create', component: CreateMovieTheatersComponent},
   {path: 'movie-theaters/edit/:id', component: EditMovieTheatersComponent},
+
+  {path: '**', redirectTo: ''}
 ];
 
 @NgModule({
