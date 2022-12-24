@@ -10,7 +10,7 @@ import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingComponent } from './utilities/rating/rating.component';
 import { HomeComponent } from './home/home.component';
-import { IndexGenresComponent } from './index-genres/index-genres.component';
+import { IndexGenresComponent } from './genres/index-genres/index-genres.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { IndexGenresComponent } from './index-genres/index-genres.component';
     MenuComponent,
     RatingComponent,
     HomeComponent,
-    IndexGenresComponent,
+    IndexGenresComponent
   ],
   imports: [
     BrowserModule,
