@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -17,12 +17,27 @@ export class CreateGenreComponent {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
-      name: ''
+      name: ['',{
+        validators: [Validators.required, Validators.minLength(6)]
+      }]
     });
   }
 
   saveGenre() {
     console.log('Genre saved');
     this.router.navigate(['/genres']);
+  }
+
+  getErrorMessageFieldName() {
+    const field = this.form.get('name');
+    if(field?.hasError('required')) {
+      return 'The name field is required';
+    }
+
+    if(field?.hasError('minlength')) {
+      return 'The minimum length is 6 characters';
+    }
+
+    return '';
   }
 }
