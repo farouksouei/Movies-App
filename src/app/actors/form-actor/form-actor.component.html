@@ -1,0 +1,18 @@
+<form (submit)="save()" [formGroup]="form">
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Name" formControlName="name" required>
+    <mat-error>
+      Name is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Age</mat-label>
+    <input matInput formControlName="age" [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <mat-error>
+      Age is <strong>required</strong>
+    </mat-error>
+  </mat-form-field>
+</form>

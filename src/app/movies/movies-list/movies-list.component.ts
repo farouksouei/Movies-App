@@ -6,9 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./movies-list.component.css']
 })
 export class MoviesListComponent {
-  ngOnInit(): void {
-  }
-
   @Input()
   movies:any;
 

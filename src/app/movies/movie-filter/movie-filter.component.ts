@@ -75,6 +75,9 @@ export class MovieFilterComponent {
       this.movies = this.movies.filter(movie => movie.upcomingReleases);
     }
 
+    if (values.genreId !== 0) {
+      this.movies = this.movies.filter(movie => movie.genreIds.includes(values.genreId));
+    }
   }
 
   cleanForm() {
