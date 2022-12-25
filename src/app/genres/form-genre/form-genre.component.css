@@ -1,0 +1,4 @@
+/*generate some styling for the form material light theme*/
+mat-form-field {
+    width: 100%;
+}
