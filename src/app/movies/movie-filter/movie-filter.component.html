@@ -1,0 +1,16 @@
+<h2>Search Movies</h2>
+
+<form [formGroup]="form">
+  <mat-form-field>
+    <mat-label>Title</mat-label>
+    <input matInput placeholder="Title" formControlName="title" />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Genre</mat-label>
+    <mat-select formControlName="genreId">
+      <mat-option [value]="'1'">Drama</mat-option>
+      <mat-option [value]="'2'">Comedy</mat-option>
+      <mat-option [value]="'3'">Tragedy</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>

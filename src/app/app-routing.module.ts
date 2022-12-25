@@ -12,11 +12,13 @@ import { CreateGenreComponent } from './genres/create-genre/create-genre.compone
 import { CreateActorsComponent } from './actors/create-actors/create-actors.component';
 import { CreateMovieComponent } from './movies/create-movie/create-movie.component';
 import { EditActorsComponent } from './actors/edit-actors/edit-actors.component';
+import { MovieFilterComponent } from './movies/movie-filter/movie-filter.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'movies/create', component: CreateMovieComponent},
   {path: 'movies/edit/:id', component: EditMovieComponent},
+  {path: 'movies/filter', component: MovieFilterComponent},
 
   {path: 'genres', component: IndexGenresComponent},
   {path: 'genres/create', component: CreateGenreComponent},
