@@ -1,3 +1,4 @@
+import { ActorModelDTO } from './../actor.model';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -11,5 +12,9 @@ export class CreateActorsComponent {
   saveGenre() {
     console.log('Actor saved');
     this.router.navigate(['/actor']);
+  }
+
+  saveChanges(actorData:ActorModelDTO){
+    console.log(actorData)
   }
 }
