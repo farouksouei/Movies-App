@@ -1,4 +1,4 @@
-import { ActorModelDTO } from './../actor.model';
+import { actorDTO, ActorModelDTO } from './../actor.model';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
@@ -17,7 +17,10 @@ export class FormActorComponent {
   onSaveChanges = new EventEmitter<ActorModelDTO>();
 
   @Input()
-  model!: ActorModelDTO;
+  model!: actorDTO;
+
+  @Input()
+  urlCurrentImage!: string;
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -25,6 +28,9 @@ export class FormActorComponent {
         validators: [Validators.required],
       }],
       dateOfBirth: ['', {
+        validators: [],
+      }],
+      picture: ['', {
         validators: [],
       }],
     });
@@ -41,5 +47,10 @@ export class FormActorComponent {
 
   cancel(){
     console.log('cancel');
+  }
+
+  imageBase64Change(image:any){
+    console.log(event);
+    this.form.get('picture')?.setValue(image);
   }
 }

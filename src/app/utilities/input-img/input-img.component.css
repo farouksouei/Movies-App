@@ -1,0 +1,11 @@
+button {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+}
