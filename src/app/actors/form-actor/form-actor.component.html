@@ -16,9 +16,11 @@
     </mat-error>
   </mat-form-field>
   <app-input-img
-    [urlCurrentImage]="model?.picture"
+    [urlCurrentImage]="model.picture"
     (imageBase64Change)="imageBase64Change($event)">
   </app-input-img>
+  <app-input-markdown></app-input-markdown>
+
   <div>
     <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Save</button>
     <button mat-raised-button color="warn" type="button" routerLink="/actors">Cancel</button>
