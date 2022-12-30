@@ -15,12 +15,14 @@
       Age is <strong>required</strong>
     </mat-error>
   </mat-form-field>
+  <h4>Select Picture :</h4>
   <app-input-img
     [urlCurrentImage]="model.picture"
     (imageBase64Change)="imageBase64Change($event)">
   </app-input-img>
   <app-input-markdown></app-input-markdown>
 
+  <h4>Biography :</h4>
   <div>
     <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Save</button>
     <button mat-raised-button color="warn" type="button" routerLink="/actors">Cancel</button>

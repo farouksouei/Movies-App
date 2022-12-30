@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./input-markdown.component.css']
 })
 export class InputMarkdownComponent {
-
+  markdownContent: string = '';
 }
